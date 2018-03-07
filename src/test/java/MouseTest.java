@@ -1,3 +1,5 @@
+import Behaviours.IOutput;
+import device_management.Monitor;
 import device_management.Mouse;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,4 +29,12 @@ public class MouseTest {
     public void testCanClickButton() {
         assertEquals("left mouse button clicked", mouse.clickButton("left"));
     }
+
+    @Test
+    public void testCanSendDataToMonitor() {
+        IOutput iOutput = new Monitor(22, 786432);
+        assertEquals("Pointer moves is now on screen", mouse.sendData("Pointer moves", iOutput));
+    }
+
+
 }

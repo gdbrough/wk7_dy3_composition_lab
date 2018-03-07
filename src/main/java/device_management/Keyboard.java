@@ -1,6 +1,8 @@
-package device_management;
+package device_management ;
 
-public class Keyboard extends InputDevice {
+import Behaviours.IInput;
+
+public class Keyboard extends InputDevice implements IInput{
 
     private int keys;
 

@@ -1,6 +1,8 @@
 package device_management;
 
-public class Mouse extends InputDevice {
+import Behaviours.IInput;
+
+public class Mouse extends InputDevice implements IInput{
 
     private int buttons;
 
