@@ -12,4 +12,8 @@ public class Keyboard extends InputDevice {
     public int getKeys() {
         return keys;
     }
+
+    public String pressKey(String key) {
+        return "'" + key + "' key pressed";
+    }
 }

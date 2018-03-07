@@ -12,4 +12,8 @@ public class Mouse extends InputDevice {
     public int getButtons() {
         return buttons;
     }
+
+    public String clickButton(String button) {
+        return button + " mouse button clicked";
+    }
 }

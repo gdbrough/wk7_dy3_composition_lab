@@ -1,7 +1,10 @@
 package device_management;
 
+import Behaviours.IOutput;
+
 public abstract class InputDevice {
 
+//    Computer computer;
     private String type;
 
     public InputDevice(String type){
@@ -12,6 +15,7 @@ public abstract class InputDevice {
         return this.type;
     }
 
-
-
+    public String sendData(String input, IOutput iOutput) {
+        return iOutput.outputData(input);
+    }
 }

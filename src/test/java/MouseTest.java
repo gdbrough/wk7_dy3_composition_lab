@@ -14,12 +14,17 @@ public class MouseTest {
     }
 
     @Test
-    public void canGetType() {
+    public void testCanGetType() {
         assertEquals("wired", mouse.getType());
     }
 
     @Test
     public void testCanGetButtons() {
         assertEquals(3, mouse.getButtons());
+    }
+
+    @Test
+    public void testCanClickButton() {
+        assertEquals("left mouse button clicked", mouse.clickButton("left"));
     }
 }
